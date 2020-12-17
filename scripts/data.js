@@ -2,7 +2,7 @@ const dataList = [
     {
         name: 'The Art Piece 1',
         price: '$49.90',
-        path: '../artpaths/artpic1.jpg'
+        path: 'https://noiseymur.github.io/canvas-store/artpaths/artpic1.jpg'
     },
     {
         name: 'The Art Piece 2',
