@@ -1,5 +1,7 @@
 import dataList from './data.js';
 
+document.addEventListener('DOMContentLoaded',()=>{
+
 let carousels = document.querySelectorAll('.sm-carousel');
 
 dataList.forEach((item,index)=>populateCarousels(item,index));
@@ -185,4 +187,6 @@ function populateCarousels (item,index) {
         scroller.appendChild(slideItem);
     }
 }
+    
+    });
 
