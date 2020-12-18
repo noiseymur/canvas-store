@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +11,20 @@ body {
   background-color: #fdf9ed;
 }
 
+.flow-item::after {
+  content: "";
+  height: 1px;
+  width: 90%;
+  background-color: rgba(70, 70, 70, 0.15);
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+
 .sm-carousel {
   max-width: 100vw;
-  margin-top: 100px;
+  margin-top: 40px;
+  position: relative;
 }
 
 .sm-scroller {
@@ -51,9 +63,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 40px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bold;
   pointer-events: none;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.41);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.41);
@@ -65,6 +74,7 @@ body {
   margin-top: 10px;
   font-family: "Poppins", sans-serif;
   text-align: center;
+  color: #464646;
 }
 
 .art-info .art-name {
@@ -79,7 +89,7 @@ body {
 }
 
 .art-info button {
-  margin-top: 30px;
+  margin: 30px 0 40px;
   width: 21vw;
   height: 7vw;
   border-radius: 4vw;
@@ -88,5 +98,52 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 2.5vw;
+}
+
+h1.section-header {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  color: #464646;
+  font-size: 6vw;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.collections {
+  margin: 40px 0;
+  padding: 0 4vw;
+  height: auto;
+}
+
+.collections .categories {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (5)[1fr];
+      grid-template-rows: repeat(1fr, 5);
+  grid-gap: 4vw;
+}
+
+.collections .categories a {
+  text-decoration: none;
+  font-size: 3.4vw;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgba(112, 112, 112, 0.11);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #ec6e0d;
+  font-weight: 400;
+}
+
+.collections .categories a:hover, .collections .categories a:focus {
+  background-color: #ec6e0d;
+  color: white;
+  font-weight: 500;
 }
 /*# sourceMappingURL=sm-style.css.map */
