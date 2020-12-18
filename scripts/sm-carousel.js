@@ -29,6 +29,7 @@ carousels.forEach(carousel=>{
     scroller.addEventListener('scroll',resizeOnScroll);
     if(scroller.children.length!==0){
         scroller.scrollTo({left: slideWidth*1.5});
+        console.log(scroller.children);
     }
     else {
         console.log('Scroller is empty');
