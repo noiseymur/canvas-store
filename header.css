@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+#site-header {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 4vw;
+}
+
+#site-header nav {
+  display: none;
+}
+
+#site-header .menu-burger .bar {
+  width: 26px;
+  height: 4px;
+  background-color: #ec6e0d;
+  border-radius: 2px;
+  position: relative;
+}
+
+#site-header .menu-burger .bar::before, #site-header .menu-burger .bar::after {
+  content: "";
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-7px);
+          transform: translateX(-50%) translateY(-7px);
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+#site-header .menu-burger .bar::after {
+  -webkit-transform: translateX(-50%) translateY(7px);
+          transform: translateX(-50%) translateY(7px);
+}
+
+#site-header .shopping-bag {
+  height: 30px;
+}
+
+#site-header .shopping-bag img {
+  height: 100%;
+}
+/*# sourceMappingURL=header.css.map */

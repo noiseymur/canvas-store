@@ -1,0 +1,47 @@
+@import "./constants";
+
+#site-header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4vw;
+
+  nav {
+    display: none;
+  }
+
+  .menu-burger {
+    .bar {
+      width: 26px;
+      height: 4px;
+      background-color: $secondary;
+      border-radius: 2px;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        width: 30px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(-7px);
+        background-color: inherit;
+        border-radius: inherit;
+      }
+
+      &::after {
+        transform: translateX(-50%) translateY(7px);
+      }
+    }
+  }
+
+  .shopping-bag {
+    height: 30px;
+    img {
+      height: 100%;
+    }
+  }
+}
