@@ -27,13 +27,7 @@ carousels.forEach(carousel=>{
     initializeSlides();
     
     scroller.addEventListener('scroll',resizeOnScroll);
-    if(scroller.children.length!==0){
-        scroller.scrollBy({left: slideWidth*1.5});
-        console.log(scroller.children);
-    }
-    else {
-        console.log('Scroller is empty');
-    }
+    scroller.scrollTo({left: slideWidth*1.5});
     scroller.addEventListener('click',scrollOnTap);
     
     scroller.addEventListener('touchstart',setInitialX);
