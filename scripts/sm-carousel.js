@@ -1,9 +1,4 @@
-// await import dataList from './data.js';
-
-let dataList = null;
-(async function () {
-  dataList = await import('./data.js');
-})();
+const dataList = import('./data.js');
 
 let carousels = document.querySelectorAll('.sm-carousel');
 
