@@ -1,10 +1,10 @@
 
 let carousels = document.querySelectorAll('.sm-carousel');
 
-import('./data.js').then((module)=>{
-    module.dataList().forEach((item,index)=>populateCarousels(item,index));
-}).then(
-    carousels.forEach(carousel=>{
+(async () => {
+    let module = await import('./data.js');
+    await module.dataList().forEach((item,index)=>populateCarousels(item,index));
+    await carousels.forEach(carousel=>{
 
     let scroller = carousel.querySelector('.sm-scroller');
     let allSlides = scroller.querySelectorAll('.sm-slide');
@@ -163,7 +163,7 @@ import('./data.js').then((module)=>{
         artName.innerText = activeArt.getAttribute('art-name');
         artPrice.innerText = activeArt.getAttribute('art-price');
     }
-});
+})();
 
 function populateCarousels (item,index) {
     let slideItem = document.createElement('div');
