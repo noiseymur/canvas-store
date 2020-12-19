@@ -1,5 +1,5 @@
 (async function () {
-    import dataList from './data.js';
+   await import dataList from './data.js';
 })();
 
 let carousels = document.querySelectorAll('.sm-carousel');
