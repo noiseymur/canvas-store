@@ -1,8 +1,8 @@
 
 let carousels = document.querySelectorAll('.sm-carousel');
 
-import('./data.js').then((dataList)=>{
-    dataList.forEach((item,index)=>populateCarousels(item,index));
+import('./data.js').then((module)=>{
+    module.dataList().forEach((item,index)=>populateCarousels(item,index));
 });
 
 // Getting the carousel, scroller and slides.
