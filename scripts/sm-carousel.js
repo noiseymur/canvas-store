@@ -163,6 +163,7 @@ let carousels = document.querySelectorAll('.sm-carousel');
         artName.innerText = activeArt.getAttribute('art-name');
         artPrice.innerText = activeArt.getAttribute('art-price');
     }
+    });
 })();
 
 function populateCarousels (item,index) {
@@ -183,7 +184,6 @@ function populateCarousels (item,index) {
         scroller.appendChild(slideItem);
     }
 }
-);
 
 // Getting the carousel, scroller and slides.
 
