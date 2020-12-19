@@ -1,10 +1,10 @@
 // await import dataList from './data.js';
 
-let dataList = async function () {
+let dataList = (async function () {
    let response = await fetch('https://api.jsonbin.io/b/5fddf38b21e08a5a59893d2c');
    await console.log(response.json());
    return await response.json();
-}
+})();
 
 let carousels = document.querySelectorAll('.sm-carousel');
 
