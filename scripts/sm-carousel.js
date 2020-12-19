@@ -6,7 +6,7 @@
 //    return await response.json();
 // })();
 
-fetch('https://api.jsonbin.io/b/5fddf6e4898fcb5a684dd4b9').then(response=>console.log);
+fetch('https://api.jsonbin.io/b/5fddf6e4898fcb5a684dd4b9').then(response=>console.log(response));
 
 let carousels = document.querySelectorAll('.sm-carousel');
 
