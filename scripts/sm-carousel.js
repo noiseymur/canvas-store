@@ -2,7 +2,7 @@
 
 let dataList = null;
 (async function () {
-  dataList = await import('./data.js);
+  dataList = await import('./data.js');
 })();
 
 let carousels = document.querySelectorAll('.sm-carousel');
