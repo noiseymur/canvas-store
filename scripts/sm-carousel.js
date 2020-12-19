@@ -27,7 +27,7 @@ carousels.forEach(carousel=>{
     initializeSlides();
     
     scroller.addEventListener('scroll',resizeOnScroll);
-    setTimeOut(()=>{
+    setTimeout(()=>{
         scroller.scrollTo({left: slideWidth*1.5});
     },0);
     scroller.addEventListener('click',scrollOnTap);
