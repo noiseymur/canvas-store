@@ -3,11 +3,8 @@ let carousels = document.querySelectorAll('.sm-carousel');
 
 import('./data.js').then((module)=>{
     module.dataList().forEach((item,index)=>populateCarousels(item,index));
-});
-
-// Getting the carousel, scroller and slides.
-
-carousels.forEach(carousel=>{
+}).then(
+    carousels.forEach(carousel=>{
 
     let scroller = carousel.querySelector('.sm-scroller');
     let allSlides = scroller.querySelectorAll('.sm-slide');
@@ -186,5 +183,10 @@ function populateCarousels (item,index) {
         scroller.appendChild(slideItem);
     }
 }
+);
+
+// Getting the carousel, scroller and slides.
+
+
 
 
