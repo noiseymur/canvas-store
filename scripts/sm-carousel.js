@@ -1,5 +1,7 @@
 import dataList from './data.js';
 
+document.addEventListener('DOMContentLoaded',()=>{
+
 let carousels = document.querySelectorAll('.sm-carousel');
 
 dataList.forEach((item,index)=>populateCarousels(item,index));
@@ -30,6 +32,7 @@ carousels.forEach(carousel=>{
     setTimeout(()=>{
         scroller.scrollTo({left: slideWidth*1.5});
     },0);
+    scroller.scrollTo({left: slideWidth*1.5});
     scroller.addEventListener('click',scrollOnTap);
     
     scroller.addEventListener('touchstart',setInitialX);
@@ -187,4 +190,6 @@ function populateCarousels (item,index) {
         scroller.appendChild(slideItem);
     }
 }
+    
+});
 
