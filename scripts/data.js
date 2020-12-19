@@ -1,4 +1,5 @@
-const dataList = [
+export const dataList = () =>{
+    return ([
     {
         name: 'The Art Piece 1',
         price: '$49.90',
@@ -84,6 +85,5 @@ const dataList = [
         price: '$49.90',
         path: 'https://noiseymur.github.io/canvas-store/artpaths/artpic17.jpg'
     }
-];
-
-export default dataList;
+]);
+};
